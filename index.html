@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GPT Online</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="Description" CONTENT=".">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="vdgptstyle.css">    
+
+</head>
+<body>
+
+
+<div class="fixedhead">
+<nav>
+<div style="display: flex; flex-direction: column; align-items: center;"><h1 class="paddedheader">GPT Online</h1><span class="typing-span">Now with context memory!</span></div>
+</nav>
+<section class="userinput">        
+    <input type="text" id="user-input" placeholder="Enter message..." onkeydown="verifyEnter(event)" />
+    <button onclick="sendMessage()">Send</button>
+</section>
+</div>
+
+<section class="chathistory">
+<div id="chat-container"></div>
+</section>
+<footer>Courtesy of: <a href="http://www.vivacitydesign.net" target="_blank">Vivacity Design</a>, June, 2023</footer>
+<script>
+function verifyEnter(event) {
+  if (event.keyCode === 13) {
+    event.preventDefault(); // Previeni il comportamento predefinito del form
+
+    sendMessage();
+  }
+}
+</script>
+
+</body>
+</html>

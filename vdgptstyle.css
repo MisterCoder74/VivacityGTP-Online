@@ -1,0 +1,188 @@
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    body {
+  background-image: url("../img/watercolor-arte.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+            height: 100%;
+}
+    
+    .message {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  font-family: Arial, sans-serif;
+}
+
+.user-message {
+  background-color: #42adf5;
+  padding: 10px;
+  border: 1px solid black;
+  color: white;
+  font-size: 1rem;
+  border-radius: 5px;
+  margin-bottom: 4px;
+}
+
+.chatgpt-message {
+  background-color: #4281f5;
+  padding: 15px;
+  color: white;
+  font-size: 1rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.fixedhead {
+position: absolute;
+        top: 0;
+        left: 0;
+        height: 25%px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+            }   
+            
+.userinput {
+  background-color: white;
+  padding: 10px;
+  z-index: 9999;
+  width: 100%;
+  height: 30%;      
+  box-shadow: 0 4px 10px lightgrey;
+}
+
+.chathistory {
+  position: absolute;
+  top: 150px;
+  padding: 10px;
+  width: 100%;
+  height: 75%;
+  overflow-y: auto;
+  box-shadow: 0 4px 10px lightgrey;
+}
+
+#chat-container {
+height: 100%;
+width: 100%;
+padding: 10px;
+}
+
+.paddedheader {
+margin: 10px 10px 10px 0;
+font-size: 2.2rem;
+}
+
+input {
+font-size: 1.2rem;
+color: black;
+border-radius: 10px;
+box-shadow: 0px 4px 10px grey;
+padding: 8px;
+width: 80%;
+margin: 0 auto;
+}
+
+button {
+background-color: #42adf5;
+color: white;
+cursor: pointer;
+padding: 8px 14px;
+font-size: 1.2rem;
+border-radius: 8px;
+border: 1px solid black;
+}
+footer{
+        position: absolute;
+        bottom: 20px;
+        width: 100%;
+display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: .9rem;
+color: black;
+
+}
+
+.typing-span {
+color: red; 
+text-align: center;
+white-space: nowrap;
+            overflow: hidden;
+            border-right: 0.15em solid #000;
+            animation: typing 7s steps(40, end) infinite, blink-caret 0.75s step-end;        
+            }            
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 70%; }
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent; }
+            50% { border-color: #000; }
+        }            
+
+@media only screen and (max-width:610px) { 
+
+nav {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+}
+input {
+font-size: 1.1rem;
+color: black;
+border-radius: 10px;
+box-shadow: 0px 4px 8px grey;
+padding: 8px;
+width: 60%;
+margin: 0 auto;
+}
+
+button {
+background-color: #42adf5;
+color: white;
+cursor: pointer;
+padding: 8px 14px;
+font-size: 1.1rem;
+border-radius: 8px;
+border: 1px solid black;
+}
+.paddedheader {
+margin: 8px;
+font-size: 1.6rem;
+
+}
+img {
+width: 200px;
+height: auto;
+}
+footer{
+        position: absolute;
+        bottom: 3px;
+        width: 100%;
+display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: .7rem;
+color: black;
+
+}        
+
+}
+
