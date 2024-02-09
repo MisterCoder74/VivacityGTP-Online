@@ -80,7 +80,7 @@ async function getChatGPTResponse(userInput, chatMemory = []) {
                 'Authorization': 'Bearer yourapikeyhere'
             },
             body: JSON.stringify({
-                "model": "gpt-3.5-turbo",
+                "model": "gpt-3.5-turbo-1106",
                 "messages": [
                     ...chatMemory,
                     {"role": "user", "content": userInput}
